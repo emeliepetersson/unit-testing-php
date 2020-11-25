@@ -31,6 +31,6 @@ class SharkTest extends TestCase
         $shark = new Shark($laser);
 
         // getWeapon === weapon
-        $this->assertEquals($laser, $shark->getWeapon());
+        $this->assertEquals(Laser::class, $shark->getWeapon());
     }
 }

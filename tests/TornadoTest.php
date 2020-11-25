@@ -18,9 +18,7 @@ class TornadoTest extends TestCase
         $sharks = [$shark1, $shark2];
         $tornado = new Tornado($sharks);
 
-        $actualSharks = $tornado->getSharks();
-
-        //$this->assertNotEmpty($actualSharks);
-        $this->assertSame($sharks, $actualSharks);
+        $this->assertIsArray($tornado->getSharks());
+        $this->assertCount(2, $tornado->getSharks());
     }
 }

@@ -34,7 +34,7 @@ class LaserTest extends TestCase
     public function testGetColorIsNullByDefault()
     {
         $laser = new Laser();
-        $this->assertEquals(null, $laser->getColor());
+        $this->assertNull($laser->getColor());
     }
 
     public function testGetColor()
